@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>TERMS AND CONDITIONS</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d83b73d8-96e9-4a6a-9e0f-96ace9185f1e" class="page sans"><header><h1 class="page-title">TERMS AND CONDITIONS</h1><p class="page-description"></p></header><div class="page-body"><p id="50f139f6-7c03-494f-9cdd-7d91577f31a8" class="">Last updated March 11, 2024</p><h2 id="43692e6c-d255-411f-aa3b-c0812cf20656" class="">AGREEMENT TO OUR LEGAL TERMS</h2><p id="0ca64686-0946-440d-a3a9-f8cf50be956a" class="">We are BILIP Bina Limpah Persada (&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;), a company registered in Indonesia at JL. RAJAWALI 1 NO. 46/30,, TANJUNG AGUNG, TANJUNG Karang Timur, Bandar Lampung, LAMPUNG 35126. Our VAT number is 74.575.265.9-323.000.<br/>We operate the mobile application Kiloin (the &quot;App&quot;), as well as any other related products and services that refer or link to these legal terms (the &quot;Legal Terms&quot;) (collectively, the &quot;Services&quot;).<br/></p><p id="9697e763-6fcb-44ad-b8e7-025370251376" class="">With Kiloin, making receipts is super easy (no more math headaches!), you&#x27;ll always know what you have in stock, and you can even predict what&#x27;s going to happen in your business next. Kiloin is designed just for recyclers like you. It&#x27;s super easy to use, helps you make decisions fast, and shows you exactly how your business is doing. No more guessing!</p><p id="9eee33d2-56ca-4f49-be8f-b5a3752ad121" class="">You can contact us by phone at +6289508577557, by email at info@kiloin.app, or by mail to JL. RAJAWALI 1 NO. 46/30,, TANJUNG AGUNG, TANJUNG Karang Timur, Bandar Lampung, LAMPUNG 35126, Indonesia.</p><p id="d04e10b5-dea0-4309-9342-e700b0eaa0e1" class="">These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity (&quot;you&quot;), and BILIP Bina Limpah Persada, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</p><p id="558db6a6-bb4f-4ad3-a77e-0fa7dbaf26d4" class="">We will provide you with prior notice of any scheduled changes to the Services you are using. The modified Legal Terms will become effective upon posting or notifying you by info@kiloin.app, as stated in the email message. By continuing to use the Services after the effective date of any changes, you agree to be bound by the modified terms.</p><p id="8b1e85c3-47e2-4740-929b-1d242f927f31" class="">The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.</p><p id="11d2309b-a6c8-4c89-ac81-711d2ad1ad07" class="">We recommend that you print a copy of these Legal Terms for your records.</p><h3 id="4457758f-e4c4-40c6-947b-0e6c36386f09" class=""><strong>TABLE OF CONTENTS</strong></h3><h2 id="f7244918-a9bd-4750-bc6e-5426cdc89220" class=""><strong>1. OUR SERVICES</strong></h2><p id="68d8745f-adbe-4d41-8635-3a7b765b1f9a" class="">The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or Lise would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country. Accordingly, those persons who choose to access the Services from other locations do so on their own initiative and are solely responsible for compliance with local laws, if and to the extent local laws are applicable</p><p id="214b47c9-1e02-47a8-ae0e-81dcad5942f8" class="">The Services are not tailored to comply with industry-specific regulations (Health Insurance Portability and Accountability Act (HIPAA), Federal Information Security Management Act (FISMA), etc.), so if your interactions would be subjected to such laws, you may not use the Services. You may not use the Services in a way that would violate the Gramm-Leach-Billey Act (GLBA)</p><h2 id="bd6f1361-909a-40f2-985f-0fb16fd57a01" class=""><strong>2. INTELLECTUAL PROPERTY RIGHTS</strong></h2><h3 id="8f0657d4-95e5-488a-9fa2-f0d566f8383e" class="">Our intellectual property</h3><p id="4f1e1480-c9bb-43bd-bfe9-5503ce0f8872" class="">We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the &quot;Content&quot;), as well as the trademarks, service marks, and logos contained therein (the &quot;Marks&quot;)</p><p id="433fb83c-39a2-4754-aa46-43b1c09eff11" class="">Our Content and Marks are protected by copyright and trademark laws (and various other intellectual property rights and unfair competition laws) and treaties in the United States and around the world.</p><p id="29fa33c0-37c0-4bdf-b725-e471a1873acd" class="">The Content and Marks are provided in or through the Services &quot;AS IS&quot; for your internal business purpose only</p><h3 id="697d0d81-9457-41b8-8b3d-c42ac3814234" class="">Your use of our Services</h3><p id="574c2f4e-7292-4cef-b3bf-5df70b585d70" class="">Subject to your compliance with these Legal Terms, including the &quot;PROHIBITED ACTIVITIES&quot; section below, we grant you a non-exclusive, non-transferable, revocable license to</p><ul id="7efa5008-e681-4747-b469-0acab180b700" class="bulleted-list"><li style="list-style-type:disc">access the Services; and</li></ul><ul id="7d41069f-0bf6-431f-8194-c260505f98da" class="bulleted-list"><li style="list-style-type:disc">download or print a copy of any portion of the Content to which you have properly gained access.</li></ul><p id="e1ce876a-d545-4a88-ac94-9b31b4233c9f" class="">solely for your internal business purposes.</p><p id="fc7bcdc2-b53e-485e-aa1a-8400038bd2f3" class="">Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p><p id="382db0bb-e87d-454a-8219-99257c50c319" class="">If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: info@kiloin.app. If we ever grant you permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.</p><p id="dec49ece-6767-4f3f-b82f-dbd954054805" class="">We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.</p><p id="144a07a0-9500-4cf5-a77a-e7bc7f3cb7b4" class="">Any breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately.</p><h3 id="ef49fc6d-378c-4b8e-b5bc-b193fbf44d4d" class="">Your submissions and contributions</h3><p id="19ec7f42-a0fc-4de8-9abf-51f00f01f10c" class="">Please review this section and the &quot;PROHIBITED ACTIVITIES&quot; section carefully prior to using our Services to understand the (a) rights you give us and (b) obligations you have when you post or upload any content through the Services.</p><p id="b1666a66-acf8-4b18-9f3c-a559bf178c0d" class=""><strong>Submissions</strong>: By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services (&quot;Submissions&quot;), you agree to assign to us all intellectual property rights in such Submission. You agree that we shall own this Submission and be entitled to its unrestricted use and dissemination for any lawful purpose, commercial or otherwise, without acknowledgment or compensation to you.</p><p id="f4ce1087-a219-41db-b2f2-8a483fae3b15" class=""><strong>Contributions</strong>: The Services may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality during which you may create, submit, post, display, transmit, publish, distribute, or broadcast content and materials to us or through the Services, including but not limited to text, writings, video, audio, photographs, music, graphics, comments, reviews, rating suggestions, personal information, or other material (&quot;Contributions&quot;). Any Submission that is publicly posted shall also be treated as a Contribution.</p><p id="d0f08d7b-21c6-4977-b778-79ea27692854" class="">You understand that Contributions may be viewable by other users of the Services.</p><p id="8b367fa7-1466-41e8-99c5-1680f41ce3bb" class=""><strong>When you post Contributions, you grant us a license (including use of your name, trademarks, and logos):</strong> By posting any Contributions, you grant us an unrestricted, unlimited, irrevocable, perpetual, non-exclusive, transferable, royalty-free, fully-paid, worldwide right, and license to: use, copy, reproduce, distribute, sell, resell, publish, broadcast, retitle, store, publicly perform, publicly display, reformat, translate, excerpt (in whole or in part), and exploit your Contributions (including, without limitation, your image, name, and voice) for any purpose, commercial, advertising, or otherwise, to prepare derivative works of, or incorporate into other works, your Contributions, and to sublicense the licenses granted in this section. Our use and distribution may occur in any media format and through any media channels.</p><p id="5d7af097-41bb-4dfa-a7b3-b9f834b9418c" class="">This license includes our use of your name, company name, and franchise name, as applicable, and any of the trademarks, service marks, trade names, logos, and personal and commercial images you provide.</p><p id="e72c5a8a-747a-453e-9561-dd6f46742fe8" class=""><strong>You are responsible for what you post or upload:</strong> By sending us Submissions and/or posting Contributions through any part of the Services or making Contributions accessible through the Services by linking your account through the Services to any of your social networking accounts, you:</p><ul id="1abc610a-dad0-4a7a-8733-7d01da66a1d0" class="bulleted-list"><li style="list-style-type:disc">confirm that you have read and agree with our &quot;PROHIBITED ACTIVITIES&quot; and will not post, send, publish, upload, or transmit through the Services any Submission nor post any Contribution that is illegal, harassing, hateful, harmful, defamatory, obscene, bullying, abusive, discriminatory, threatening to any person or group, sexually explicit, false, inaccurate, deceitful, or misleading;</li></ul><ul id="005817b6-5f93-4daa-8fc3-fb20f3c4065b" class="bulleted-list"><li style="list-style-type:disc">to the extent permissible by applicable law, waive any and all moral rights to any such Submission and/or Contribution;</li></ul><ul id="0d979aa2-f27c-4485-b281-707e64299a33" class="bulleted-list"><li style="list-style-type:disc">warrant that any such Submission and/or Contributions are original to you or that you have the necessary rights and licenses to submit such Submissions and/or Contributions and that you have full authority to grant us the above-mentioned rights in relation to your Submissions and/or Contributions; and</li></ul><ul id="fb92f97b-7722-4408-969c-f86c09c11952" class="bulleted-list"><li style="list-style-type:disc">warrant and represent that your Submissions and/or Contributions do not constitute confidential information.</li></ul><p id="314ac77f-f50e-4c9a-8092-cd3c927632e8" class="">You are solely responsible for your Submissions and/or Contributions and you expressly agree to reimburse us for any and all losses that we may suffer because of your breach of (a) this section, (b) any third party&#x27;s intellectual property rights, or (c) applicable law.</p><p id="0c26f8b4-c764-4a4b-bb94-28b5ea4765ba" class=""><strong>We may remove or edit your Content: </strong>Although we have no obligation to monitor any Contributions, we shall have the right to remove or edit any Contributions at any time without notice if, in our reasonable opinion, we consider such Contributions harmful or in breach of these Legal Terms. If we remove or edit any such Contributions, we may also suspend or disable your account and report you to the authorities.</p><h3 id="7fdafb6a-2f24-4a4f-b6f3-8708309ebb1c" class="">Copyright infringement</h3><p id="5502be3b-3699-4d58-b753-91bc85a1153a" class="">We respect the intellectual property rights of others. If you believe that any material available on or through the Services infringes upon any copyright you own or control, please immediately refer to the &quot;COPYRIGHT INFRINGEMENTS&quot; section below.</p><h2 id="4d37dddf-6277-42ff-8e28-ff56812d54ea" class=""><strong>3. USER REPRESENTATIONS</strong></h2><p id="0cc6681d-d2f4-4bc5-8b60-1b3b40bf58c8" class="">By using the Services, you represent and warrant that: (1) all registration information you submit will be true, accurate, current, and complete; (2) you will maintain the accuracy of such information and promptly update such registration information as necessary; (3) you have the legal capacity and you agree to comply with these Legal Terms; (4) you are not a minor in the jurisdiction in which you reside; (5) you will not access the Services through automated or non-human means, whether through a bot script or otherwise, (6) you will not use the Services for any illegal or unauthorized purpose, and (7) your use of the Services will not violate any applicable law or regulation</p><p id="07ba56c6-618c-47a1-a5e3-af66fa6ab469" class="">If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Services (or any portion thereof).</p><h2 id="af88d269-9898-45e3-a475-34430510ee8b" class="">4<strong>.</strong> <strong>USER</strong> <strong>REGISTRATION</strong></h2><p id="9bb96e86-2ca1-4191-9238-8ada63a7b667" class="">You may be required to register to use the Services. You agree to keep your password confidential and will be responsible for all use of your account and password. We reserve the right to remove, reclaim, or change a username you select if we determine, in our sole discretion, that such username is inappropriate, obscene, or otherwise objectionable</p><h2 id="6509c62a-a9e8-4a09-bfc7-c970552bfa2a" class="">5<strong>. PURCHASES AND PAYMENT</strong></h2><p id="9382b534-f7ae-48dc-bf81-2cf354ae3b27" class="">We accept the following forms of payment:</p><p id="62b7e308-8b06-4450-b0d3-d6f28508eb67" class="">You agree to provide current, complete, and accurate purchase and account information for all purchases made via the Services. You further agree to promptly update account and payment information, including email address, payment method, and payment card expiration date, so that we can complete your transactions and contact you as needed. Sales tax will be added to the price of purchases as deemed required by us. We may change prices at any time. All payments shall be in US dollars.</p><p id="217badca-ba83-4222-a21f-cbe0d784560a" class="">You agree to pay all charges at the prices then in effect for your purchases and any applicable shipping fees, and you authorize us to charge your chosen payment provider for any such amounts upon placing your order. We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received payment</p><p id="4749a066-51d3-457d-a980-9a93391ececd" class="">We reserve the right to refuse any order placed through the Services. We may, in our sole discretion, limit or cancel quantities purchased per person, per household, or per order, These restrictions may include orders placed by or under the same customer account, the same payment method, and/or orders that use the same billing or shipping address. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers, or distributors.</p><h2 id="2751fb35-91d7-4869-bd8c-deb2f2c1cb0d" class="">6. SUBSCRIPTIONS</h2><h3 id="5a9d2c1a-5950-4d62-9b93-28a7e6e9b78d" class="">Billing and Renewal</h3><p id="575a647f-4a37-4a8e-be75-b3827a87737f" class="">Your subscription will continue and automatically renew unless canceled. You consent to our charging your payment method on a recurring basis without requiring your prior approval for each recurring charge, until such time as you cancel the applicable order. The length of your billing cycle will depend on the type of subscription plan you choose when you subscribed to the Services</p><h3 id="97da1256-54a5-4a99-acf9-537166c6b1ec" class="">Cancellation</h3><p id="c6d1ca6c-0c5e-4e9f-904a-8a3bef2b281d" class="">You can cancel your subscnption at any time by logging into your account. Your cancellation will take effect at the end of the current paid term. If you have any questions or are unsatisfied with our Services, please email us at info@kiloin.app.</p><h3 id="407c80f4-6872-4a66-a7b7-7d2411e271cf" class="">Fee Changes</h3><p id="8ae2499d-20dd-40df-9e32-9d00b67179d4" class="">We may, from time to time, make changes to the subscription fee and will communicate any price changes to you in accordance with applicable law</p><h2 id="bc43e09e-5bea-4121-be97-f3f6beb51190" class="">7. SOFTWARE</h2><p id="465ede0f-26f7-4231-aaea-9e6f0b71df0e" class="">We may include software for use in connection with our Services. If such software is accompanied by an end user license agreement (&quot;EULA&quot;), the terms of the EULA will govern your use of the software. If such software is not accompanied by a EULA, then we grant to you a non-exclusive, revocable, personal, and non-transferable license to use such software solely in connection with our services and in accordance with these Legal Terms. Any software and any related documentation is provided &quot;AS IS&quot; without warranty of any kind, either express or implied, including, without limitation, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. You accept any and all risk arising out of use or performance of any software. You may not reproduce or redistribute any software except in accordance with the EULA or these Legal Terms.</p><h2 id="098a2adc-fae8-4248-8791-6e1530d23f22" class="">8. PROHIBITED ACTIVITIES</h2><p id="bde805f3-a812-4a4a-9476-cebe00090a71" class="">You may not access or use the Services for any purpose other than that for which we make the Services available. The Services may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.</p><p id="f5e8732c-edee-4b9e-9b6f-875a0acb76b4" class="">As a user of the Services, you agree not to:</p><ul id="3ab92a69-c938-4cd9-bbc7-e4ab83c4a8a8" class="bulleted-list"><li style="list-style-type:disc">Systematically retrieve data or other content from the Services to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us.</li></ul><ul id="17776892-d752-4b58-aaff-cf7008ca5d88" class="bulleted-list"><li style="list-style-type:disc">Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information such as user passwords.</li></ul><ul id="93142d22-64d5-4768-8ae4-7d58a1c839a9" class="bulleted-list"><li style="list-style-type:disc">Circumvent, disable, or otherwise interfere with security-related features of the Services, Including features that prevent or restrict the use or copying of any Content or enforce limitations on the use of the Services and/or the Content contained therein.</li></ul><ul id="000d4dea-a8ea-441f-b574-68c92718675f" class="bulleted-list"><li style="list-style-type:disc">Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Services.</li></ul><ul id="92a77444-ccbe-481a-b963-2e376aa7ce49" class="bulleted-list"><li style="list-style-type:disc">Use any information obtained from the Services in order to harass, abuse, or harm another person.</li></ul><ul id="aed7905f-d73f-4e7a-9045-ff84f8f490b1" class="bulleted-list"><li style="list-style-type:disc">Make improper use of our support services or submit false reports of abuse or misconduct.</li></ul><ul id="c01815d5-300c-4b76-8205-ce0e9485e990" class="bulleted-list"><li style="list-style-type:disc">Use the Services in a manner inconsistent with any applicable laws or regulations.</li></ul><ul id="72798118-e848-41f3-82ee-62f244c9f98e" class="bulleted-list"><li style="list-style-type:disc">Engage in unauthorized framing of or linking to the Services.</li></ul><ul id="817d8432-7a8e-4aa3-8285-a4c4b6fe7e22" class="bulleted-list"><li style="list-style-type:disc">Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material, including excessive use of capital letters and spamming (continuous posting of repetitive text). that interferes with any party&#x27;s uninterrupted use and enjoyment of the Services or modifies impairs, disrupts, alters, or interferes with the use, features, functions, operation, or maintenance of the Services.</li></ul><ul id="a67ee528-2b2d-4ef1-bfb4-4b7c82c3a5d0" class="bulleted-list"><li style="list-style-type:disc">Engage in any automated use of the system, such as using scripts to send comments or messages, or using any data mining, robots, or similar data gathering and extraction tools.</li></ul><ul id="eabb1963-618d-409d-9f08-ace4a2482e47" class="bulleted-list"><li style="list-style-type:disc">Delete the copyright or other proprietary rights notice from any Content Attempt to impersonate another user or person or use the username of another user.</li></ul><ul id="67d67c47-391a-4da0-ba35-9ef09f878c87" class="bulleted-list"><li style="list-style-type:disc">Attempt to impersonate another user or person or use the username of another user.</li></ul><ul id="47902e4a-d6e3-44bb-96c8-4498e67eb5e7" class="bulleted-list"><li style="list-style-type:disc">Upload or transmit (or attempt to upload or to transmit) any material that acts as a passive or active information collection or transmission mechanism, including without limitation, clear graphics interchange formats (&quot;gifs&quot;), 1x1 pixels, web bugs, cookies, or other similar devices (sometimes referred to as &quot;spyware&quot; or &quot;passive collection mechanisms&quot; or &quot;pcms&quot;).</li></ul><ul id="31937833-aeb9-46ce-aef3-cbf247c17a72" class="bulleted-list"><li style="list-style-type:disc">Interfere with, disrupt, or create an undue burden on the Services or the networks or services connected to the Services.</li></ul><ul id="256b9a35-4f5f-442c-b0e1-7d938c1d78bb" class="bulleted-list"><li style="list-style-type:disc">Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Services to you.</li></ul><ul id="d7f63a73-cfed-465e-9c33-006e306ccc59" class="bulleted-list"><li style="list-style-type:disc">Attempt to bypass any measures of the Services designed to prevent or restrict access to the Services, or any portion of the Services.</li></ul><ul id="646b4175-62f6-49cb-bf8f-aac2534090b6" class="bulleted-list"><li style="list-style-type:disc">Copy or adapt the Services&#x27; software, including but not limited to Flash, PHP, HTML, JavaScript, or other code.</li></ul><ul id="00bd8dae-0861-431f-9a55-18161e086740" class="bulleted-list"><li style="list-style-type:disc">Except as permitted by applicable law, decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Services.</li></ul><ul id="edbaad71-c076-4b77-bcdc-99bf3b201115" class="bulleted-list"><li style="list-style-type:disc">Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Services, or use or launch any unauthorized script or other software.</li></ul><ul id="1352a010-e57c-4089-9738-a2aa82a6d80c" class="bulleted-list"><li style="list-style-type:disc">Use a buying agent or purchasing agent to make purchases on the Services.</li></ul><ul id="51f037f9-2b2d-4ba4-adec-6fc410239f1f" class="bulleted-list"><li style="list-style-type:disc">Make any unauthorized use of the Services, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email, or creating user accounts by automated means or under false pretenses.</li></ul><ul id="122943b5-71bd-4ef1-8871-0e3fb94c29c7" class="bulleted-list"><li style="list-style-type:disc">Use the Services as part of any effort to compete with us or otherwise use the Services and/or the Content for any revenue-generating endeavor or commercial enterprise.</li></ul><ul id="af7cc0de-c78e-4167-b92f-9a0f98df267f" class="bulleted-list"><li style="list-style-type:disc">Sell or otherwise transfer your profile.</li></ul><ul id="8de04a8b-5954-48fa-9dc7-c83470307388" class="bulleted-list"><li style="list-style-type:disc">Reverse engineer a part or all part of the software.</li></ul><h2 id="5a511496-7697-434f-b051-dd6e3f3cb4ed" class="">9. USER-GENERATED CONTRIBUTIONS</h2><p id="17569298-c429-4446-9031-6c33397e825f" class="">The Services may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, &quot;Contributions&quot;). Contributions may be viewable by other users of the Services and through third-party websites. As such, any Contributions you transmit may be treated as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby represent and warrant that:</p><ul id="f88ca764-6a26-4f97-bb1d-0ed63e644c62" class="bulleted-list"><li style="list-style-type:disc">The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party.</li></ul><ul id="fe99ebb2-643b-413c-8c50-6cc5844e9b0b" class="bulleted-list"><li style="list-style-type:disc">You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Services, and other users of the Services to use your Contributions in any manner contemplated by the Services and these Legal Terms.</li></ul><ul id="63921121-e0cf-4128-9d13-128dbb1cc98c" class="bulleted-list"><li style="list-style-type:disc">You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Services and these Legal Terms.</li></ul><ul id="aad0db85-8588-4ca9-8dbf-2f8310757153" class="bulleted-list"><li style="list-style-type:disc">Your Contributions are not false, inaccurate, or misleading.</li></ul><ul id="d5ceb0e6-15c8-44b0-babc-f245214e0846" class="bulleted-list"><li style="list-style-type:disc">Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation.</li></ul><ul id="01770c42-3768-4b4d-aaac-90431bd7fe4c" class="bulleted-list"><li style="list-style-type:disc">Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us).</li></ul><ul id="362720ba-70fc-4657-9330-e4aa2d25f566" class="bulleted-list"><li style="list-style-type:disc">Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone.</li></ul><ul id="471aa816-2802-4127-b93f-30672def7ac7" class="bulleted-list"><li style="list-style-type:disc">Your Contributions are not used to harass or threaten (in the legal sense of those terms) any other person and to promote violence against a specific person or class of people.</li></ul><ul id="9fc2b378-8835-4530-af93-466426e1cf1c" class="bulleted-list"><li style="list-style-type:disc">Your Contributions do not violate any applicable law, regulation, or rule.</li></ul><ul id="f3c1a7e4-ece4-4504-b0e8-d5eddccf8fba" class="bulleted-list"><li style="list-style-type:disc">Your Contributions do not violate the privacy or publicity rights of any third party.</li></ul><ul id="eeda5f7d-9b35-4b98-bb39-539f1308be6a" class="bulleted-list"><li style="list-style-type:disc">Your Contributions do not violate any applicable law concerning child pornography or otherwise intended to protect the health or well-being of minors.</li></ul><ul id="34247e2b-962c-46a2-bc36-76bf11709f01" class="bulleted-list"><li style="list-style-type:disc">Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap.</li></ul><ul id="85bceddc-2a78-40e0-b151-bbd4bbe27b7a" class="bulleted-list"><li style="list-style-type:disc">Your Contributions do not otherwise violate, or link to material that violates, any provision of these Legal Terms, or any applicable law or regulation.</li></ul><p id="73a39551-8337-4d28-9b06-7e318a5041be" class="">Any use of the Services in violation of the foregoing violates these Legal Terms and may result in, among other things, termination or suspension of your rights to use the Services.</p><h2 id="3b67971b-9c63-41b4-b40f-3dccbf760158" class=""><strong>10. CONTRIBUTION LICENSE</strong></h2><p id="c9189ab3-624d-4351-8f7a-aece84601d0d" class="">By posting your Contributions to any part of the Services, you automatically grant, and you represent and warrant that you have the right to grant, to us an unrestricted, unlimited, irrevocable, perpetual, non-exclusive, transferable, royalty-free, fully-paid, worldwide right, and license to host, use, copy, reproduce, disclose, sell, resell, publish, broadcast, retitle, archive, store, cache, publicly perform, publicly display, reformat, translate, transmit, excerpt (in whole or in part), and distribute such Contributions (including, without limitation, your image and voice) for any purpose, commercial, advertising, or otherwise, and to prepare derivative works of, or incorporate into other works, such Contributions, and grant and authorize sublicenses of the foregoing. The use and distribution may occur in any media format and through any media channels.</p><p id="95666a57-30c7-457f-b670-9bc73b72608f" class="">This license will apply to any form, media, or technology now known or hereafter developed, and includes our use of your name, company name, and franchise name, as applicable, and any of the trademarks, service marks, trade names, logos, and personal and commercial images you provide. You waive all moral rights in your Contributions, and you warrant that moral rights have not otherwise been asserted in your Contributions.</p><p id="25eff638-9891-4c33-8676-464c9b244cca" class="">We do not assert any ownership over your Contributions. You retain full ownership of all of your Contributions and any intellectual property rights or other proprietary rights associated with your Contributions. We are not liable for any statements or representations in your Contributions provided by you in any area of the Services. You are solely responsible for your Contributions to the Services and you expressly agree to exonerate us from any and all responsibility and to refrain from any legal action against us regarding your Contributions.</p><p id="68542dd6-561b-4ff3-b133-a61aae5a71b0" class="">We have the right, in our sole and absolute discretion, (1) to edit, redact, or otherwise change any Contributions; (2) to re-categorize any Contributions to place them in more appropriate locations on the Services; and (3) to pre-screen or delete any Contributions at any time and any reason, without notice. We have no obligation to monitor your Contributions.</p><h2 id="71327046-b1a0-4623-8b22-9640b76d55f0" class=""><strong>11. MOBILE APPLICATION LICENSE</strong></h2><h3 id="6392975e-7e64-4965-9507-d24354ddd290" class=""><strong>Use License</strong></h3><p id="8aeed664-f571-4938-81a8-1628522992ef" class="">If you access the Services via the App, then we grant you a revocable, non-exclusive, non-transferable, limited right to install and use the App on wireless electronic devices owned or controlled by you, and to access and use the App on such devices strictly in accordance with the terms and conditions of this mobile application license contained in these Legal Terms. You shall not: (1) except as permitted by applicable law, decompile, reverse engineer, disassemble, attempt to derive the source code of, or decrypt the App: (2) make any modification, adaptation, improvement, enhancement, translation, or derivative work from the App; (3) violate any applicable laws, rules, or regulations in connection with your access or use of the App; (4) remove, alter, or obscure any proprietary notice (including any notice of copyright or trademark) posted by us or the licensors of the App: (5) use the App for any revenue- generating endeavor, commercial enterprise, or other purpose for which it is not designed or intended: (6) make the App available over a network or other environment permitting access or use by multiple devices or users at the same time; (7) use the App for creating a product, service, or software that is, directly or indirectly, competitive with or in any way a substitute for the App; (8) use the App to send automated queries to any website or to send any unsolicited commercial email; or (9) use any proprietary information or any of our interfaces or our other intellectual property in the design, development, manufacture, licensing, or distribution of any applications, accessories, or devices for use with the App.</p><h3 id="4db6b56f-54cf-4d1d-8678-d71141136212" class=""><strong>Apple and Android Devices</strong></h3><p id="fa3aad6b-f356-4044-85b7-58933f29f958" class="">The following terms apply when you use the App obtained from either the Apple Store or Google Play (each an &quot;App Distributor&quot;) to access the Services: (1) the license granted to you for our App is limited to a non-transferable license to use the application on a device that utilizes the Apple IOS or Android operating systems, as applicable, and in accordance with the usage rules set forth in the applicabile App Distributor&#x27;s terms of service; (2) we are responsible for providing any maintenance and support services with respect to the App as specified in the terms and conditions of this mobile application license contained in these Legal Terms or as otherwise required under applicable law, and you acknowledge that each App Distributor has no obligation whatsoever to furnish any maintenance and support services with respect to the App; (3) in the event of any failure of the App to conform to any applicable warranty, you may notify the applicable App Distributor, and the App Distributor, in accordance with its terms and policies, may refund the purchase price, if any, paid for the App, and to the maximum extent permitted by applicable law, the App Distributor will have no other warranty obligation whatsoever with respect to the App: (4) you represent and warrant that (1) you are not located in a country that is subject to a US government embargo, or that has been designated by the US government as a &quot;terrorist supporting&quot; country and (ii) you are not listed on any US government list of prohibited or restricted parties; (5) you must comply with applicable third-party terms of agreement when using the App, e.g., if you have a VoIP application, then you must not be in violation of their wireless data service agreement when using the App; and (6) you acknowledge and agree that the App Distributors are third-party beneficiaries of the terms and conditions in this mobile application license contained in these Legal Terms, and that each App Distributor will have the right (and will be deemed to have accepted the right) to enforce the terms and conditions in this mobile application license contained in these Legal Terms against you as a third-party beneficiary thereof.</p><h2 id="7ad46cd8-f94d-4928-8a89-de857cda0d38" class=""><strong>12. ADVERTISERS</strong></h2><p id="8d14b467-c472-4589-8d87-ee2d4997d047" class="">We allow advertisers to display their advertisements and other information in certain areas of the Services, such as sidebar advertisements or banner advertisements. We simply provide the space to place such advertisements, and we have no other relationship with advertisers.</p><h2 id="02e71b19-19de-44ff-9049-58997c176d2e" class=""><strong>13. SERVICES MANAGEMENT</strong></h2><p id="cc02c578-976d-4c35-9a83-25dcc5b5e167" class="">We reserve the right, but not the obligation, to: (1) monitor the Services for violations of these Legal Terms; (2) take appropriate legal action against anyone who, in our sole discretion, violates the law or these Legal Terms, including without limitation, reporting such user to law enforcement authorities; (3) in our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof; (4) in our sole discretion and without limitation, notice, or liability, to remove from the Services or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems; and (5) otherwise manage the Services in a manner designed to protect our rights and property and to facilitate the proper functioning of the Services.</p><h2 id="b3805220-65ee-4332-a23e-fce1a46a5ebf" class=""><strong>14. PRIVACY POLICY</strong></h2><p id="0858f143-838c-4c2a-9707-56288934523c" class="">We care about data privacy and security. By using the Services, you agree to be bound by our Privacy Policy posted on the Services, which is incorporated into these Legal Terms. Please be advised the Services are hosted in If you access the Services from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in your data to then through your continued use of the Services, you are transferring and you expressly consent to have your data transferred to and processed in</p><h2 id="7ff258ee-f863-4978-8238-94b8c289fd56" class=""><strong>15. COPYRIGHT INFRINGEMENTS</strong></h2><p id="f1779935-c37e-4a1e-925e-36c86df1d2db" class="">We respect the intellectual property rights of others. If you believe that any material available on or through the Services infringes upon any copyright you own or control, please immediately notify us using the contact information provided below (a &quot;Notification&quot;). A copy of your Notification will be sent to the person who posted or stored the material addressed in the Notification. Please be advised that pursuant to applicable law you may be held liable for damages if you make material misrepresentations in a Notification. Thus, if you are not sure that material located on or linked to by the Services infringes your copyright, you should consider first contacting an attorney.</p><h2 id="5f23a13d-9160-4411-a3b1-dab693538f3b" class=""><strong>16. TERM AND TERMINATION</strong></h2><p id="183bbbfa-74df-41ad-8a28-58589b18e8c8" class="">These Legal Terms shall remain in full force and effect while you use the Services. WITHOUT LIMITING ANY OTHER PROVISION OF THESE LEGAL TERMS, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SERVICES (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE LEGAL TERMS OR OF ANY APPLICABLE LAW OR REGULATION, WE MAY TERMINATE YOUR USE OR PARTICIPATION</p><p id="89b674ae-04ec-4d2c-93de-2cd2f1e033a6" class="">IN THE SERVICES OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION</p><p id="23302841-f941-4083-951f-1ff81d57b9a3" class="">If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil criminal, and injunctive redress.</p><h2 id="24d175b9-a972-42cf-a00d-d6c2cfd15fcc" class=""><strong>17. MODIFICATIONS AND INTERRUPTIONS</strong></h2><p id="d456f0ff-1c89-44e3-b169-b01b0aefa599" class="">We reserve the right to change, modify, or remove the contents of the Services at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Services. We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Services.</p><p id="c953affb-07ff-43e9-bb04-d4c2f731a83d" class="">We cannot guarantee the Services will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Services, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Services at any time or for any reason without notice to you. You agree that we have no liability whatsoever for any loss, damage, or inconvenience caused by your inability to access or use the Services during any downtime or discontinuance of the Services. Nothing in these Legal Terms will be construed to obligate us to maintain and support the Services or to supply any corrections, updates, or releases in connection therewith.</p><h2 id="0598e2c6-7cbe-4da6-b6a2-8927cf310305" class=""><strong>18. GOVERNING LAW</strong></h2><p id="1bad018f-e06e-4ec7-9c17-d5aecf1a58fa" class="">These Legal Terms shall be governed by and defined following the laws of Indonesia. BILIP Bina Limpah Persada and yourself irrevocably consent that the courts of Indonesia shall have exclusive jurisdiction to resolve any dispute which may arise in connection with these Legal Terms.</p><h2 id="3ed05575-5823-4559-ba8a-dfa4c2e977ec" class=""><strong>19. DISPUTE RESOLUTION</strong></h2><h3 id="c44e1b4a-f583-4a33-8ed4-37650851487d" class=""><strong>Informal Negotiations</strong></h3><p id="43caa8f2-3896-4454-9cd8-5248bb3f0038" class="">To expedite resolution and control the cost of any dispute, controversy, or claim related to these Legal Terms (each a &quot;Dispute&quot; and collectively, the &quot;Disputes&quot;) brought by either you or us (individually, a &quot;Party&quot; and collectively, the &quot;Parties&quot;), the Parties agree to first attempt to negotiate any Dispute (except Those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party</p><h3 id="386da11a-718b-4d8e-ae5e-e5a1027dc5af" class=""><strong>Binding Arbitration</strong></h3><p id="f17c0890-dc06-4910-9d8e-04b62fddad2f" class="">Any dispute arising out of or in connection with these Legal Terms, including any question regarding its existence, validity, or termination, shall be referred to and finally resolved by the International Commercial Arbitration Court under the European Arbitration Chamber (Belgium, Brussels, Avenue Louise, 146) according to the Rules of this ICAC, which, as a result of referring to it, is considered as the part of this clause. The number of arbitrators shall be three (3). The seat, or legal place, or arbitration shall be Bandung, Indonesia. The language of the proceedings shall be Englis. The governing law of these Legal Terms shall be substantive law of Indonesia.</p><h3 id="2236843c-6abd-41ca-8461-980074bd0b85" class=""><strong>Restrictions</strong></h3><p id="f1c009e8-7022-45ce-8e0d-bb01f5943fae" class="">The Parties agree that any arbitration shall be limited to the Dispute between the Parties individually To the full extent permitted by law, (a) no arbitration shall be joined with any other proceeding (b) there is no right or authority for any Dispute to be arbitrated on a class-action basis or to utilize class action procedures; and (c) there is no right or authority for any Dispute to be brought in a purported representative capacity on behalf of the general public or any other persons.</p><h3 id="470f5b88-d474-4d1c-9108-97030ed26661" class=""><strong>Exceptions to Informal Negotiations and Arbitration</strong></h3><p id="10c4f10a-035c-44df-901a-a43bae4defdf" class="">The Parties agree that the following Disputes are not subject to the above provisions concerning informal negotiations binding arbitration: (a) any Disputes seeking to enforce or protect, or concerning the validity of, any of the intellectual property rights of a Party, (b) any Dispute related to, or arising from, allegations of theft, piracy, invasion of privacy, or unauthorized use, and (c) any claim for injunctive relief. If this provision is found to be illegal or unenforceable, then neither Party will elect to arbitrate any Dispute falling within that portion of this provision found to be illegal or unenforceable and such Dispute shall be decided by a court of competent jurisdiction within the courts listed for jurisdiction above, and the Parties agree to submit to the personal jurisdiction of that court.</p><h2 id="b90688c6-6020-4e00-a751-3dba166a1e79" class=""><strong>20. CORRECTIONS</strong></h2><p id="ca7bd098-c00c-4979-8ff4-6cc780a77b50" class="">There may be information on the Services that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Services at any time, without prior notice.</p><h2 id="9f324ab1-feaf-496c-9348-2d78abbbed48" class=""><strong>21. DISCLAIMER</strong></h2><p id="687bdf4f-5caa-416c-9ab6-9ec7d466a1bc" class="">THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SERVICES AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE SERVICES CONTENT OR THE CONTENT OF ANY WEBSITES OR MOBILE APPLICATIONS LINKED TO THE SERVICES AND WE WILL ASSUME NO LIABILITY OR RESPONSIBILITY FOR ANY (1) ERRORS, MISTAKES, OR INACCURACIES OF CONTENT AND MATERIALS, (2) PERSONAL INJURY OR PROPERTY DAMAGE, OF ANY NATURE WHATSOEVER, RESULTING FROM YOUR ACCESS TO AND USE OF THE SERVICES, (3) ANY UNAUTHORIZED ACCESS TO OR USE OF OUR SECURE SERVERS AND/OR ANY AND ALL PERSONAL INFORMATION AND/OR FINANCIAL INFORMATION STORED THEREIN, (4) ANY INTERRUPTION OR CESSATION OF TRANSMISSION TO OR FROM THE SERVICES, (5) ANY BUGS, VIRUSES, TROJAN HORSES, OR THE LIKE WHICH MAY BE TRANSMITTED TO OR THROUGH THE SERVICES BY ANY THIRD PARTY, AND/OR (6) ANY ERRORS OR OMISSIONS IN ANY CONTENT AND MATERIALS OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE SERVICES. WE DO NOT WARRANT, ENDORSE, GUARANTEE, OR ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR OFFERED BY A THIRD PARTY THROUGH THE SERVICES, ANY HYPERLINKED WEBSITE, OR ANY WEBSITE OR MOBILE APPLICATION FEATURED IN ANY BANNER OR OTHER ADVERTISING, AND WE WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF PRODUCTS OR SERVICES AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH ANY MEDIUM OR IN ANY ENVIRONMENT, YOU SHOULD USE YOUR BEST JUDGMENT AND EXERCISE CAUTION WHERE APPROPRIATE</p><h2 id="fe25df58-8421-4981-ad66-32f53475aae3" class=""><strong>22. LIMITATIONS OF LIABILITY</strong></h2><p id="a399a013-fe4b-43c4-bc7f-8be9f9e33987" class="">IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SERVICES, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. NOTWITHSTANDING ANYTHING TO THE CONTRARY CONTAINED HEREIN, OUR LIABILITY TO YOU FOR ANY CAUSE WHATSOEVER AND REGARDLESS OF THE FORM OF THE ACTION, WILL AT ALL TIMES BE LIMITED TO THE AMOUNT PAID, IF ANY, BY YOU TO US DURING THE SIX (6) MONTH PERIOD PRIOR TO ANY CAUSE OF ACTION ARISING CERTAIN US STATE LAWS AND INTERNATIONAL LAWS DO NOT ALLOW LIMITATIONS ON IMPLIED WARRANTIES OR THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES. IF THESE LAWS APPLY TO YOU, SOME OR ALL OF THE ABOVE DISCLAIMERS OR LIMITATIONS MAY NOT APPLY TO YOU, AND YOU MAY HAVE ADDITIONAL RIGHTS.</p><h2 id="af97a432-d84a-4932-9b4e-7683cee83f47" class=""><strong>23. INDEMNIFICATION</strong></h2><p id="c5f05cde-cc7f-4eed-958f-5ca3eb0c9a05" class="">You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys&#x27; fees and expenses, made by any third party due to or arising out of (1) your Contributions; (2) use of the Services; (3) breach of these Legal Terms; (4) any breach of your representations and warranties set forth in these Legal Terms, (5) your violation of the rights of a third party, including but not limited to intellectual property rights; or (6) any overt harmful act toward any other user of the Services with whom you connected via the Services. Notwithstanding the foregoing, we reserve the right, at your expense, to assume the exclusive defense and control of any matter for which you are required to indemnify us, and you agree to cooperate, at your expense, with our defense of such claims. We will use reasonable efforts to notify you of any such claim, action, or proceeding which is subject to this indemnification upon becoming aware of it.</p><h2 id="13437025-792d-4031-baed-6ecc3c830954" class=""><strong>24. USER DATA</strong></h2><p id="b9efa4fd-7db4-49e2-beaa-807dca8cd296" class="">We will maintain certain data that you transmit to the Services for the purpose of managing the performance of the Services, as well as data relating to your use of the Services. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Services. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.</p><h2 id="bc03a8ee-16f0-4cd3-adf2-d357d7035d1c" class=""><strong>25. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</strong></h2><p id="3a00a317-3302-4e88-a5f9-9b8be7250215" class="">Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that al agreements, notices, disclosures, and other communications we provide to you electronically, via email, and on the Services, satisfy any legal requirement that such communication be in writing YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.</p><h2 id="8856f9e0-9f2b-43dc-ac33-69421afd71c6" class=""><strong>26. CALIFORNIA USERS AND RESIDENTS</strong></h2><p id="328364bf-7ab4-4ad6-9385-af8ecee081f9" class="">If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.</p><h2 id="ce1a8ce9-9bc3-40fd-8085-38237de0078a" class=""><strong>27. MISCELLANEOUS</strong></h2><p id="3e5d809d-635b-4d5c-8dcf-332aea128f5f" class="">These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment, or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms.</p><h2 id="e062e8f8-6c77-4d2a-8e09-67614dc9b4d9" class=""><strong>28. CONTACT US</strong></h2><p id="8db41c60-a043-4a45-bbfa-51cb641ac876" class="">In order to resolve a complaint regarding the Services or to receive further information regarding the use of the Services, please contact us at:</p><p id="28391445-82a7-447e-9c6b-f542a100e3f7" class=""><strong>BILIP Bina Limpah Persada</strong></p><p id="b4b2a384-c254-4c33-b15d-164b3c500c58" class=""><strong>JL. RAJAWALI 1 NO. 46/30,</strong></p><p id="962264ac-3aa3-456e-a19b-71383ac28ceb" class=""><strong>TANJUNG AGUNG, TANJUNG Karang Timur</strong></p><p id="a8661604-80e8-46de-8f51-04d0c6a8b5f1" class=""><strong>Bandar Lampung, LAMPUNG 35126</strong></p><p id="76fac213-6db7-454a-a894-354703d56c9f" class=""><strong>Indonesia</strong></p><p id="852f27c0-818e-48d6-bee1-02054113950d" class=""><strong>Phone: +6289508577557</strong></p><p id="e3995ecd-8307-4b5c-b605-82cc069f7f30" class=""><strong>info@kiloin.app</strong></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
